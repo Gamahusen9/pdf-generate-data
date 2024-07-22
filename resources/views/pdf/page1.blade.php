@@ -10,7 +10,7 @@
         .text {
             /* font-family: Arial, Helvetica, sans-serif; */
             font-size: 12px;
-            margin-left: 50px;
+            margin-left: 100px;
             margin-top: 50px;
             text-justify: inter-word;
             text-align: justify;
@@ -34,7 +34,7 @@
 </head>
 
 <body>
-    <img src={{ public_path('images/p.png') }} style="width:550px; margin-left: 40px" alt="">
+    <img src={{ public_path('images/p.png') }} style="width:700px; margin-left: 40px" alt="">
     <div class="paragraf-reponsive" style="width: 640">
         <div class="text">
             <p class="lokasi">Tangerang Selatan, 16 Mei 2024</p>

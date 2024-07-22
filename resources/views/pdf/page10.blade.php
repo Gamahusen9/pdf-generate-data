@@ -12,6 +12,6 @@
     </style>
 </head>
 <body>
-    <h1 style="text-align: center">PENAWARAN BIAYA PEKERJAAN PEMBANGUNAN</h1>
+    <h1 style="text-align: center; padding:20px;">PENAWARAN BIAYA PEKERJAAN PEMBANGUNAN</h1>
 </body>
 </html>

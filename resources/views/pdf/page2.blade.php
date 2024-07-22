@@ -8,7 +8,7 @@
     <title>Document</title>
     <style>
         .content {
-            height: 700px;
+            height: 100%;
             background-size: 100% 100%;
             text-align: start;
             color: white;
@@ -18,7 +18,7 @@
         }
 
         .content h1 {
-            padding: 290px 0 0 80px;
+            padding: 360px 0 0 90px;
 
         }
     </style>
@@ -32,7 +32,7 @@
                 BRO-CK-0169-Rizki
             </b>
         </h1>
-        <h2 style="margin-left: 80px; letter-spacing: 2px;">
+        <h2 style="margin-left: 90px; letter-spacing: 2px;">
             Perumahan Griya Sepakat blok A8, Jakarta Timur
         </h2>
     </div>

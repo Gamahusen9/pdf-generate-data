@@ -33,7 +33,11 @@ class PdfController extends Controller
 
 
         $mpdf = new Mpdf([
-            'fontDir' => array_merge($fontDirs, [
+                'margin_left' => 0,
+                'margin_right' => 0,
+                'margin_top' => 0,
+                'margin_bottom' => 0,
+                'fontDir' => array_merge($fontDirs, [
                 public_path('font/Montserrat/static/'),
             ]),
             'fontdata' => $fontData + [

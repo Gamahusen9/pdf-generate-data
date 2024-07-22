@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <div class="page-duabelas" style="width: 80%; margin-left:50px;">
+    <div class="page-duabelas" style="width: 80%; padding:40px;">
         <h2>Layanan Kami</h2>
         <p>Adapun Jasa dan biaya yang kami tawarkan diatas, sudah termasuk dalam bentuk jasa sebagai berikut :</p>
         <ul style="">

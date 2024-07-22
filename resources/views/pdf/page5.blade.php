@@ -13,7 +13,7 @@
 </head>
 <body>
     <div class="content" style="background: white;">
-        <img src="{{ public_path('images/page4.png') }}" style="margin-left: 30px; width:1000px;" alt="">
+        <img src="{{ public_path('images/page4.png') }}" style=" width:1000px;" alt="">
     </div>
 </body>
 </html>

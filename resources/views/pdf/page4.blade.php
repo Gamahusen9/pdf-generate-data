@@ -12,8 +12,7 @@
     </style>
 </head>
 <body>
-    <div class="content" style="background: white;">
-        <img src="{{ public_path('images/page3.png') }}" style="margin-left: 30px; width:1000px" alt="">
+    <div class="content" style="background:url({{ public_path('images/page3.png') }});">
     </div>
 </body>
 </html>

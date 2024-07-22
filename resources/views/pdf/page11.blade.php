@@ -21,7 +21,7 @@
 </head>
 
 <body>
-    <div class="page-sebelas" style="width: 80%; margin-left:100px">
+    <div class="page-sebelas" style="width: 80%; padding:40px;">
         <h2 style="text-align: start">Hasil Tinjauan Desain / Lapangan</h2>
         <p style="letter-spacing: 0.2px">Adapun hasil tinjauan lapangan Adapun hasil tinjauan lapangan melalui gambar
             yang dikirim via WhatsApp format skp. yang telah ditinjau oleh tim Bina Rumah Online (BRO), maka terdapat

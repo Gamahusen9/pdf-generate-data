@@ -32,7 +32,7 @@
 </head>
 
 <body>
-    <div class="pdf-tujuh">
+    <div class="pdf-tujuh" style="padding: 50px; padding-top:75px;">
         <h2>Brief Klien (Rencana Pembangunan / Renovasi)</h2>
         <div class="paragraf">
             <p>
