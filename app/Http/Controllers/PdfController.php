@@ -9,22 +9,6 @@ class PdfController extends Controller
 {
     public function generatePdf()
     {
-        // Buat instance MPDF
-        // $mpdf = new Mpdf();
-
-        // Render view to HTML
-        // $html = view('pdf.template')->render();
-
-        // Write HTML content to PDF
-        // $mpdf->WriteHTML($html);
-
-        // Output PDF
-        // $mpdf->Output('nama_file.pdf', 'D');
-        // exit;
-        // D for download, I for inline
-
-                // Buat instance MPDF dengan orientasi default (Potrait)
-
         $defaultConfig = (new \Mpdf\Config\ConfigVariables())->getDefaults();
         $fontDirs = $defaultConfig['fontDir'];
 
@@ -110,7 +94,88 @@ class PdfController extends Controller
         $html15 = view('pdf.page15')->render();
         $mpdf->WriteHTML($html15);
 
-        $mpdf->Output('nama_file.pdf', 'I'); // 'D' for download, 'I' for inline
+        $mpdf->Output('nama_file.pdf', 'I');
+        exit;
+    }
+
+    public function generateKontrak()
+        {
+        $defaultConfig = (new \Mpdf\Config\ConfigVariables())->getDefaults();
+        $fontDirs = $defaultConfig['fontDir'];
+
+        $defaultFontConfig = (new \Mpdf\Config\FontVariables())->getDefaults();
+        $fontData = $defaultFontConfig['fontdata'];
+
+
+        $mpdf = new Mpdf([
+                'margin_left' => 0,
+                'margin_right' => 0,
+                'margin_top' => 0,
+                'margin_bottom' => 0,
+                'fontDir' => array_merge($fontDirs, [
+                public_path('font/Montserrat/static/'),
+            ]),
+            'fontdata' => $fontData + [
+                'montserrat' => [
+                    'R' => 'Montserrat-Regular.ttf',
+                    'I' => 'Montserrat-Bold.ttf',
+                    'B' => 'Montserrat-Bold.ttf',
+                ]
+            ],
+            'default_font' => 'montserrat'
+        ]);
+
+
+        $html1 = view('kontrak-pdf.sp1')->render();
+        $mpdf->WriteHTML($html1);
+
+        $mpdf->AddPage('P');
+        $html2 = view('kontrak-pdf.sp2')->render();
+        $mpdf->WriteHTML($html2);
+
+        $mpdf->AddPage('P');
+        $html3 = view('kontrak-pdf.sp3')->render();
+        $mpdf->WriteHTML($html3);
+
+        $mpdf->AddPage('P');
+        $html4 = view('kontrak-pdf.sp4')->render();
+        $mpdf->WriteHTML($html4);
+
+
+        $mpdf->AddPage('P');
+        $html6 = view('kontrak-pdf.sp6')->render();
+        $mpdf->WriteHTML($html6);
+
+        $mpdf->AddPage('P');
+        $html7 = view('kontrak-pdf.sp7')->render();
+        $mpdf->WriteHTML($html7);
+
+        // $mpdf->AddPage('P');
+        // $html8 = view('kontrak-pdf.sp8')->render();
+        // $mpdf->WriteHTML($html8);
+
+        // $mpdf->AddPage('P');
+        // $html9 = view('kontrak-pdf.sp9')->render();
+        // $mpdf->WriteHTML($html9);
+
+        // $mpdf->AddPage('P');
+        // $html10 = view('kontrak-pdf.sp10')->render();
+        // $mpdf->WriteHTML($html10);
+
+        // $mpdf->AddPage('P');
+        // $html11 = view('kontrak-pdf.sp11')->render();
+        // $mpdf->WriteHTML($html11);
+
+        $mpdf->AddPage('P');
+        $html12 = view('kontrak-pdf.sup-perintah-kerja')->render();
+        $mpdf->WriteHTML($html12);
+
+        $mpdf->AddPage('P');
+        $html13 = view('kontrak-pdf.surat-kepemilikan-tanah')->render();
+        $mpdf->WriteHTML($html13);
+
+
+        $mpdf->Output('nama_file.pdf', 'I');
         exit;
     }
 }

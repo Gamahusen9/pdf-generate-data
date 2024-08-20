@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>PROPOSAL PENAWARAN</title>
     <style>
         .text {
             /* font-family: Arial, Helvetica, sans-serif; */
@@ -14,8 +14,6 @@
             margin-top: 50px;
             text-justify: inter-word;
             text-align: justify;
-
-
         }
 
         .text ul {
@@ -37,7 +35,7 @@
     <img src={{ public_path('images/p.png') }} style="width:700px; margin-left: 40px" alt="">
     <div class="paragraf-reponsive" style="width: 640">
         <div class="text">
-            <p class="lokasi">Tangerang Selatan, 16 Mei 2024</p>
+            <p class="lokasi">Tangerang Selatan, {{ now() }}</p>
             <div class="content-text" style="margin-left: 40px;">
                 <p>
                     Nomor: 383/SPw/BIC-BRO/V/2024 <br> <br>
@@ -45,10 +43,10 @@
                     Perihal : Penawaran Harga
                 </p>
                 <p>Kepata YTH,</p>
-                <p style="font-weight: bold"><b>Up. Rizki</b></p>
+                <p style="font-weight: bold"><b>Up. Gama</b></p>
                 <p>di Tempat
                 </p>
-                <span>Sehubungan dengan adanya rencana pembangunan / renovasi rumah Rizki telah
+                <span>Sehubungan dengan adanya rencana pembangunan / renovasi rumah Gama telah
                     kami terima data teknis secara umum, sebagai berikut :</span>
             </div>
             {{-- <p style="margin-left: 80px">
@@ -67,19 +65,19 @@
             <table style="margin-left: 80px; font-size:12px;">
                 <tr>
                     <td>Nama Pemilik</td>
-                    <td style="padding-left:50px;"><p>: Rizki</p></td>
+                    <td style="padding-left:50px;"><p>: Gama </p></td>
                 </tr>
                 <tr>
                     <td>Lokasi</td>
-                    <td style="padding-left:50px;"><p>: Perumahan Griya Sepakat blok A8, Jakarta Timur</p></td>
+                    <td style="padding-left:50px;"><p>: Pakaladen Road</p></td>
                 </tr>
                 <tr>
                     <td>Rencana Pembangunan</td>
-                    <td style="padding-left:50px;"><p>: Bangun Baru Lantai 2</p></td>
+                    <td style="padding-left:50px;"><p>: Buatkan Rumah Dengan Bagus</p></td>
                 </tr>
                 <tr>
                     <td>Luasan Pembangunan</td>
-                    <td style="padding-left:50px;"><p>: ±132 m2 </p></td>
+                    <td style="padding-left:50px;"><p>: 200 M2 </p></td>
                 </tr>
             </table>
 

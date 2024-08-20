@@ -12,8 +12,8 @@
     </style>
 </head>
 <body>
-    <div class="content" style="background: white;">
-        <img src="{{ public_path('images/page4.png') }}" style=" width:1000px;" alt="">
+    <div class="content" style="background-image: url({{ public_path('images/page4.png') }});">
+        {{-- <img src="{{ public_path('images/page4.png') }}" style="" alt=""> --}}
     </div>
 </body>
 </html>

@@ -9,4 +9,5 @@ Route::get('/', function () {
 
 
 Route::get('/generate-pdf', [PdfController::class, 'generatePdf']);
+Route::get('/generate-kontrak', [PdfController::class, 'generateKontrak']);
 

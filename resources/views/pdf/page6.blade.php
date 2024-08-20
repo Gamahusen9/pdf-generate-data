@@ -13,7 +13,7 @@
 </head>
 <body>
     <div class="content" style="background:url({{ public_path('images/page5.png') }});">
-        <img src="{{ public_path('images/page5.png') }}" style="width:1200px;" alt="">
+        {{-- <img src="{{ public_path('images/page5.png') }}" style="width:1200px;" alt=""> --}}
     </div>
 </body>
 </html>
